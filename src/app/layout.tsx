@@ -13,7 +13,7 @@ export default function RootLayout({
   return (
     <html lang="ru">
       <body
-        className={`${inter.variable} ${unbounded.variable} font-inter antialiased bg-dark-2 text-white`}
+        className={`${inter.variable} ${unbounded.variable} font-text scroll-smooth bg-dark-2 text-white antialiased`}
       >
         {children}
       </body>
