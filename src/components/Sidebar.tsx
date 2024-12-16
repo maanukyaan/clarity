@@ -16,6 +16,7 @@ export default function Sidebar() {
             link.route === "/"
               ? pathname === "/"
               : pathname.startsWith(link.route);
+
           return (
             <Link
               key={link.label}
@@ -28,9 +29,7 @@ export default function Sidebar() {
               )}
             >
               <Image src={link.icon} alt={link.label} width={24} height={24} />
-              <p className="text-base font-semibold max-lg:hidden">
-                {link.label}
-              </p>
+              <p className="font-semibold max-lg:hidden">{link.label}</p>
             </Link>
           );
         })}
